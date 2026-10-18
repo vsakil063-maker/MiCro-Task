@@ -1,0 +1,147 @@
+.lottery-hero {
+  margin: 16px;
+  padding: 20px;
+  background: linear-gradient(135deg, #240b45 0%, #111827 70%, #1e1333 100%);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 215, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(121, 40, 202, 0.25);
+}
+
+.lottery-hero::after {
+  content: "🎁";
+  position: absolute;
+  right: -10px;
+  bottom: -20px;
+  font-size: 6rem;
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+.hero-tag {
+  background: rgba(255, 215, 0, 0.15);
+  color: var(--gold-primary);
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 12px;
+  display: inline-block;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.grand-prize-display {
+  margin: 12px 0;
+}
+
+.grand-prize-label {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.grand-prize-amount {
+  font-size: 2.2rem;
+  font-weight: 900;
+  background: var(--gold-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.countdown-box {
+  background: rgba(10, 14, 26, 0.7);
+  border-radius: 14px;
+  padding: 12px;
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+.timer-item span {
+  display: block;
+}
+
+.timer-num {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--gold-primary);
+}
+
+.timer-label {
+  font-size: 0.65rem;
+  color: var(--text-secondary);
+}
+
+.lottery-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 0 16px 16px 16px;
+}
+
+.stat-item {
+  background: var(--bg-card);
+  padding: 14px;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  text-align: center;
+}
+
+.stat-item .val {
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin-top: 4px;
+  color: var(--text-primary);
+}
+
+.action-box {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tier-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  margin: 16px;
+  padding: 16px;
+  border: 1px solid var(--border-color);
+}
+
+.tier-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px dashed rgba(255,255,255,0.08);
+}
+.tier-row:last-child { border-bottom: none; }
+
+.ticket-list {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ticket-badge-card {
+  background: var(--bg-card);
+  border-radius: 16px;
+  border-left: 5px solid var(--gold-primary);
+  padding: 16px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.ticket-number {
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  color: var(--gold-primary);
+}
