@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>উইকলি লটারি — MicroTask</title>
+  <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/lottery.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <header class="top-nav">
+      <div class="brand-title">🎟️ Weekly Lottery</div>
+      <div class="user-badge">
+        <span class="coin-icon">🪙</span>
+        <span class="user-balance-val">৳0</span>
+      </div>
+    </header>
+
+    <div class="lottery-hero">
+      <div style="display: flex; justify-content: space-between; align-items: center;">
+        <span class="hero-tag">সীমিত সময়</span>
+        <span id="draw-status-badge" class="badge badge-open">OPEN</span>
+      </div>
+      <div class="grand-prize-display">
+        <div class="grand-prize-label">গ্র্যান্ড প্রাইজ (১ম পুরস্কার)</div>
+        <div class="grand-prize-amount">৳৫০,০০০</div>
+      </div>
+      <p style="font-size: 0.85rem; color: var(--text-secondary);">ড্র আইডি: DRAW-WK-2026-42</p>
+
+      <div class="countdown-box">
+        <div class="timer-item"><span class="timer-num" id="timer-days">00</span><span class="timer-label">দিন</span></div>
+        <div class="timer-item"><span class="timer-num" id="timer-hours">00</span><span class="timer-label">ঘণ্টা</span></div>
+        <div class="timer-item"><span class="timer-num" id="timer-mins">00</span><span class="timer-label">মিনিট</span></div>
+        <div class="timer-item"><span class="timer-num" id="timer-secs">00</span><span class="timer-label">সেকেন্ড</span></div>
+      </div>
+    </div>
+
+    <div class="lottery-stats-grid">
+      <div class="stat-item">
+        <div style="font-size: 0.75rem; color: var(--text-secondary);">টিকিট মূল্য</div>
+        <div class="val" style="color: var(--gold-primary);">৳৫০</div>
+      </div>
+      <div class="stat-item">
+        <div style="font-size: 0.75rem; color: var(--text-secondary);">মোট ডেমো এন্ট্রি</div>
+        <div class="val" id="total-entries-count">0</div>
+      </div>
+    </div>
+
+    <div class="action-box">
+      <a href="buy-ticket.html" class="btn btn-gold">🎟️ এখনই টিকিট কিনুন (ডেমো)</a>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+        <a href="my-tickets.html" class="btn btn-purple">আমার টিকিট</a>
+        <a href="live-draw.html" class="btn btn-outline">🔴 লাইভ ড্র</a>
+      </div>
+      <a href="lottery-history.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.2); color: #fff;">📜 পূর্ববর্তী ফলাফল ও বিজেতা</a>
+    </div>
+
+    <div class="tier-card">
+      <h4 style="margin-bottom: 12px; color: var(--gold-primary);">পুরস্কারের তালিকা</h4>
+      <div class="tier-row">
+        <span>🥇 ১ম পুরস্কার (গ্র্যান্ড)</span>
+        <strong style="color: var(--gold-primary);">৳৫০,০০০</strong>
+      </div>
+      <div class="tier-row">
+        <span>🥈 ২য় পুরস্কার</span>
+        <strong>৳২০,০০০</strong>
+      </div>
+      <div class="tier-row">
+        <span>🥉 ৩য় পুরস্কার</span>
+        <strong>৳১০,০০০</strong>
+      </div>
+    </div>
+
+    <nav class="bottom-nav">
+      <a href="user-dashboard.html" class="nav-item"><span class="nav-icon">🏠</span>হোম</a>
+      <a href="lottery.html" class="nav-item active"><span class="nav-icon">🎟️</span>লটারি</a>
+      <a href="my-tickets.html" class="nav-item"><span class="nav-icon">🏷️</span>টিকিট</a>
+      <a href="user-profile.html" class="nav-item"><span class="nav-icon">👤</span>প্রোফাইল</a>
+    </nav>
+  </div>
+
+  <script src="../js/user-auth.js"></script>
+  <script src="../js/lottery.js"></script>
+</body>
+</html>
