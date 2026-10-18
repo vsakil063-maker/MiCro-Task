@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>প্রোফাইল — MicroTask</title>
+  <link rel="stylesheet" href="../css/user.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <header class="top-nav">
+      <div class="brand-title">ইউজার প্রোফাইল</div>
+      <div class="user-badge">
+        <span class="coin-icon">🪙</span>
+        <span class="user-balance-val">৳0</span>
+      </div>
+    </header>
+
+    <div style="padding: 20px; text-align: center;">
+      <div style="width: 80px; height: 80px; border-radius: 50%; background: var(--purple-gradient); margin: 0 auto 12px auto; display: flex; align-items: center; justify-content: center; font-size: 2rem; border: 2px solid var(--gold-primary);">
+        👤
+      </div>
+      <h3 id="prof-user-name">Md. Ariful Islam</h3>
+      <p style="font-size: 0.8rem; color: var(--text-secondary);">মোবাইল: 01712-345678</p>
+      <p style="font-size: 0.75rem; color: var(--gold-primary); margin-top: 4px;">আইডি: USR-78921</p>
+
+      <div style="background: var(--bg-card); padding: 16px; border-radius: 16px; margin-top: 20px; border: 1px solid var(--border-color); text-align: left;">
+        <h4 style="margin-bottom: 10px; color: var(--gold-primary);">ডেমো ওয়ালেট কন্ট্রোল</h4>
+        <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 12px;">লটারি টিকিট টেস্ট করার জন্য ডেমো ফান্ড যোগ করুন:</p>
+        <button onclick="addDemoFund()" class="btn btn-gold" style="width: 100%;">+ ৳৫০০ ডেমো ব্যালেন্স যোগ করুন</button>
+      </div>
+
+      <div style="margin-top: 20px;">
+        <a href="user-login.html" class="btn btn-outline" style="width: 100%; border-color: #ef4444; color: #ef4444;">লগআউট করুন</a>
+      </div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="user-dashboard.html" class="nav-item"><span class="nav-icon">🏠</span>হোম</a>
+      <a href="lottery.html" class="nav-item"><span class="nav-icon">🎟️</span>লটারি</a>
+      <a href="my-tickets.html" class="nav-item"><span class="nav-icon">🏷️</span>টিকিট</a>
+      <a href="user-profile.html" class="nav-item active"><span class="nav-icon">👤</span>প্রোফাইল</a>
+    </nav>
+  </div>
+
+  <script src="../js/user-auth.js"></script>
+  <script>
+    function addDemoFund() {
+      const user = getLoggedUser();
+      user.demoBalance += 500;
+      updateUserData(user);
+      alert('৳৫০০ ডেমো ব্যালেন্স যোগ করা হয়েছে!');
+    }
+  </script>
+</body>
+</html>
