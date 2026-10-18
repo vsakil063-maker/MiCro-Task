@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>লটারি হিস্ট্রি — MicroTask</title>
+  <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/lottery.css">
+</head>
+<body>
+  <div class="mobile-container">
+    <header class="top-nav">
+      <a href="lottery.html" style="color: #fff; text-decoration: none;">← ফিরে যান</a>
+      <div class="brand-title">লটারি ফলাফল হিস্ট্রি</div>
+      <div class="user-badge">
+        <span class="coin-icon">🪙</span>
+        <span class="user-balance-val">৳0</span>
+      </div>
+    </header>
+
+    <div style="padding: 16px;">
+      <h3 style="font-size: 1.1rem; margin-bottom: 4px;">পূর্ববর্তী ড্র ও বিজয়ী তালিকা</h3>
+      <p style="font-size: 0.75rem; color: var(--text-secondary); margin-bottom: 16px;">পূর্বে সমাপ্ত হওয়া সকল ড্র এবং আপনার টিকিটের ফলাফল নিচে দেখুন।</p>
+      
+      <!-- Container for Past Draws -->
+      <div id="history-list-container"></div>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="user-dashboard.html" class="nav-item"><span class="nav-icon">🏠</span>হোম</a>
+      <a href="lottery.html" class="nav-item active"><span class="nav-icon">🎟️</span>লটারি</a>
+      <a href="my-tickets.html" class="nav-item"><span class="nav-icon">🏷️</span>টিকিট</a>
+      <a href="user-profile.html" class="nav-item"><span class="nav-icon">👤</span>প্রোফাইল</a>
+    </nav>
+  </div>
+
+  <script src="../js/user-auth.js"></script>
+  <script src="../js/lottery.js"></script>
+  <script src="../js/history.js"></script>
+</body>
+</html>
