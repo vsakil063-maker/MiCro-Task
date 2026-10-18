@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>লাইভ ড্র — MicroTask</title>
+  <link rel="stylesheet" href="../css/user.css">
+  <link rel="stylesheet" href="../css/live-draw.css">
+</head>
+<body>
+  <canvas id="confetti-canvas"></canvas>
+
+  <div class="mobile-container">
+    <header class="top-nav">
+      <a href="lottery.html" style="color: #fff; text-decoration: none;">← ফিরে যান</a>
+      <div class="brand-title">🔴 লাইভ ড্র রুম</div>
+      <div class="user-badge">
+        <span class="coin-icon">🪙</span>
+        <span class="user-balance-val">৳0</span>
+      </div>
+    </header>
+
+    <!-- Simulated Live Player Frame -->
+    <div class="live-stream-box">
+      <div class="live-tag">● LIVE STAGE</div>
+      <p style="font-size: 0.8rem; color: var(--text-secondary); margin-bottom: 8px;">MicroTask Official Weekly Draw</p>
+      
+      <!-- Ball Machine Spinner -->
+      <div id="lottery-machine" class="lottery-machine">
+        <div id="revealed-ball" class="revealed-ball">?</div>
+      </div>
+
+      <p style="font-size: 0.75rem; color: #fbc02d;">স্বয়ংক্রিয় বল ড্র মেশিন সক্রিয়</p>
+    </div>
+
+    <!-- Winner Announcement Card -->
+    <div id="winner-card" class="winner-card">
+      <h2 style="color: var(--gold-primary); font-size: 1.4rem;">🎉 গ্র্যান্ড প্রাইজ বিজয়ী!</h2>
+      <div style="font-size: 0.85rem; margin: 8px 0; color: #fff;">বিজয়ী টিকিট নম্বর:</div>
+      <div id="winner-ticket-num" style="font-size: 1.8rem; font-weight: 900; color: #ffd700; letter-spacing: 2px;">-----</div>
+      <div style="margin-top: 6px; font-size: 0.9rem;">পুরস্কার: <strong>৳৫০,০০০</strong></div>
+      <div style="font-size: 0.8rem; opacity: 0.85; margin-top: 2px;">ব্যবহারকারী: <span id="winner-user-name">---</span></div>
+    </div>
+
+    <div style="padding: 16px;">
+      <button id="btn-start-animation" class="btn btn-gold" style="width: 100%;">
+        🎲 ড্র প্রক্রিয়া শুরু করুন (ডেমো অ্যানিমেশন)
+      </button>
+      <p style="font-size: 0.72rem; color: var(--text-secondary); text-align: center; margin-top: 10px;">
+        * অ্যানিমেশনটি ফলাফল নির্ধারণ করে না; অ্যাডমিন ও সিস্টেম কর্তৃক নির্ধারিত ফলাফল উন্মোচন করে।
+      </p>
+    </div>
+
+    <!-- Bottom Navigation -->
+    <nav class="bottom-nav">
+      <a href="user-dashboard.html" class="nav-item"><span class="nav-icon">🏠</span>হোম</a>
+      <a href="lottery.html" class="nav-item active"><span class="nav-icon">🎟️</span>লটারি</a>
+      <a href="my-tickets.html" class="nav-item"><span class="nav-icon">🏷️</span>টিকিট</a>
+      <a href="user-profile.html" class="nav-item"><span class="nav-icon">👤</span>প্রোফাইল</a>
+    </nav>
+  </div>
+
+  <script src="../js/user-auth.js"></script>
+  <script src="../js/lottery.js"></script>
+  <script src="../js/live-draw.js"></script>
+</body>
+</html>
